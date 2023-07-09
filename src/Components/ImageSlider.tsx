@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Buttons } from "./Buttons";
 
 interface ImageSliderProps {
    images: string[];
@@ -23,7 +24,7 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
             <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
          </div>
          <div className='buttonContainer'>
-            <button onClick={goToPreviousSlide}>Previous</button>
+            <Buttons onClick={goToPreviousSlide} task={"Previous"} />
             <button onClick={goToNextSlide}>Next</button>
          </div>
       </div>
