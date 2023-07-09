@@ -24,8 +24,8 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
             <img src={images[currentSlide]} alt={`Slide ${currentSlide + 1}`} />
          </div>
          <div className='buttonContainer'>
-            <Buttons onClick={goToPreviousSlide} task={"Previous"} />
-            <button onClick={goToNextSlide}>Next</button>
+            <Buttons onClick={goToPreviousSlide} task={"<--"} />
+            <Buttons onClick={goToNextSlide} task={"-->"} />
          </div>
       </div>
    );

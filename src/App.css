@@ -2,7 +2,7 @@ body {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   background-color: rgb(80, 6, 165);
+   background-color: rgb(234, 241, 234);
 }
 
 .app {
@@ -30,7 +30,22 @@ body {
 }
 
 .buttonContainer {
+   gap: 15px;
    display: flex;
    align-items: center;
    justify-content: center;
+}
+
+button {
+   background-color: rgb(64, 231, 13);
+   border: none;
+   font-size: larger;
+   height: 40px;
+   width: 40px;
+   padding: 5px 3px;
+   border-radius: 49%;
+   border: 2px solid black;
+}
+button:hover {
+   background-color: rgb(66, 170, 66);
 }
