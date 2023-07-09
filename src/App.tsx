@@ -1,4 +1,5 @@
 import { ImageSlider } from "./Components/ImageSlider";
+import "./App.css";
 
 export const App: React.FC = () => {
    const images = [
